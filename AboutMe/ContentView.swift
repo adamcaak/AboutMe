@@ -12,19 +12,19 @@ struct ContentView: View {
         TabView {
             HomeView()
                 .tabItem {
-                    Label("Home", image: "person")
+                    Label("Home", systemImage: "person")
                 }
             StoryView()
                 .tabItem {
-                    Label("Story", image: "book")
+                    Label("Story", systemImage: "book")
                 }
             FavoritesView()
                 .tabItem {
-                    Label("Favorites", image: "star")
+                    Label("Favorites", systemImage: "star")
                 }
             FanFactsView()
                 .tabItem {
-                    Label("Fan Facts", image: "hand.thumbsup")
+                    Label("Fan Facts", systemImage: "hand.thumbsup")
                 }
         }
     }
