@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct FanFactsView: View {
+    @State private var funFact: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Fun Facts")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            
+            Text(funFact)
+                .padding()
+                .font(.title)
+                .frame(minHeight: 400)
+            
+            Button("Generate Random Fun Fact") {
+                funFact = information.funFacts.randomElement()!
+            }
+        }
+        .padding()
     }
 }
 
