@@ -11,7 +11,7 @@ struct Story {
     let pages: [StoryPage]
     
     subscript(_ pageIndex: Int) -> StoryPage {
-        return pages(pageIndex)
+        return pages[pageIndex]
     }
 }
 

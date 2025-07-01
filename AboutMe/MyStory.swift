@@ -69,7 +69,7 @@ let story = Story(pages: [
         """
         The judges come around to ask you about your cake. You are so excited to tell them about your toppings, which include:
         """,
-        choices: [
+        choice: [
             Choice(text: "Marzipan figurines", destination: 12),
             Choice(text: "Fondant figurines", destination: 14),
         ]
