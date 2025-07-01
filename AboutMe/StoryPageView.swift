@@ -8,11 +8,34 @@
 import SwiftUI
 
 struct StoryPageView: View {
+    let story: Story
+    let pageIndex: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ScrollView {
+                Text(story[pageIndex].text)
+            }
+            
+            ForEach(story[pageIndex].choice, id: \Choice.text) { choice in
+                NavigationLink(destination: StoryPageView(story: story, pageIndex: choice.destination)) {
+                    Text(choice.text)
+                        .multilineTextAlignment(.leading)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding()
+                        .background(Color.gray.opacity(0.25))
+                        .cornerRadius(8)
+                }
+            }
+        }
+        .padding()
+        .navigationTitle("Page \(pageIndex + 1)")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-#Preview {
-    StoryPageView()
+struct NonlinearStory_Previews: PreviewProvider {
+    static var previews: some View {
+        StoryPageView(story: story, pageIndex: 0)
+    }
 }
