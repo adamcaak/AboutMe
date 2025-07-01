@@ -8,7 +8,6 @@
 import Foundation
 
 struct Story {
-    
     let pages: [StoryPage]
     
     subscript(_ pageIndex: Int) -> StoryPage {
