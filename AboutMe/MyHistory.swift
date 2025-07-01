@@ -17,7 +17,7 @@ let story = Story(pages: [
         
         Each station is stocked with bowls of different sizes, spatulas, spoons, and a standing mixer. You are the third to arrive, so there are many stations still available. Where do you sit?
         """,
-        choices: [
+        choice: [
             Choice(text: "Front row!", destination: 1),
             Choice(text: "Find somewhere in the middle", destination: 1),
             Choice(text: "Back of the room", destination: 2),
@@ -27,7 +27,7 @@ let story = Story(pages: [
         """
         Luckily, some nice people fill in around you and wave politely. The directions sounds fun! Make a sponge cake you would have wanted as a child for your birthday, focusing on the decorations and theme. The top three bakers will win a cash prize. You start with a theme.
         """,
-        choices: [
+        choice: [
             Choice(text: "Trains", destination: 3),
             Choice(text: "Castles", destination: 5),
             Choice(text: "Rainbows", destination: 6),
@@ -39,7 +39,7 @@ let story = Story(pages: [
         """
         Oh no. There is a very loud person next to you. You can barely hear the directions in the back of the room. You think they said something about a birthday cake. Luckily, the person in front of you whispers a brief review of what they said...glazing over a few things. “A birthday cake I would have wanted as a kid.” Hmm? You think back to your favorite cake.
         """,
-        choices: [
+        choice: [
             Choice(text: "Chocolate", destination: 4),
             Choice(text: "Red velvet", destination: 4),
             Choice(text: "Vanilla confetti", destination: 5),
@@ -50,7 +50,7 @@ let story = Story(pages: [
         """
         Great choice! Now you just need to make the sponge cake and start thinking about the toppings. You scan the selection on the table and start planning your toppings. In addition to all the colorful icing, you choose...
         """,
-        choices: [
+        choice: [
             Choice(text: "Sprinkles", destination: 8),
             Choice(text: "Berries", destination: 7),
             Choice(text: "Chocolate", destination: 9),
@@ -60,7 +60,7 @@ let story = Story(pages: [
         """
         Okay, you seem to be in the clear. Everyone else is busy working on their cakes and you are too...only their cakes all look the same. You shrug it off thinking your cake is going to be unique and special. The judges come over and ask you what’s going to go on top of your cake. You tell them:
         """,
-        choices: [
+        choice: [
             Choice(text: "Piped buttercream frosting", destination: 13),
             Choice(text: "Fondant icing", destination: 7),
         ]
@@ -78,7 +78,7 @@ let story = Story(pages: [
         """
         The judges come around to ask you what you are planning. You tell them all about your rainbow-themed cake. One of the things you tell them is:
         """,
-        choices: [
+        choice: [
             Choice(text: "It’s in the shape of a rainbow.", destination: 15),
             Choice(text: "It has multicolored candies on the outside.", destination: 10),
             Choice(text: "It has marshmallow clouds.", destination: 11),
@@ -88,7 +88,7 @@ let story = Story(pages: [
         """
         There is so much available to decorate with; your cake keeps getting better and better. You notice some of your neighbors are using some decorations you didn’t see on the table. What do you do?
         """,
-        choices: [
+        choice: [
             Choice(text: "Pop over to your neighbor’s bench and ask where they got their toppings.", destination: 16),
             Choice(text: "Keep working away, your cake will be great even without the specialty item.", destination: 20),
         ]
@@ -99,7 +99,7 @@ let story = Story(pages: [
         """,
 
 
-        choices: [
+        choice: [
             Choice(text: "Pipe the decorations onto parchment paper. You can transfer them at the last minute.", destination: 17),
             Choice(text: "Start decorating, you don’t have a minute to waste.", destination: 18),
         ]
@@ -108,7 +108,7 @@ let story = Story(pages: [
         """
         You are feeling good about your timing and start creating your design. You want your theme to come to life, so you decide to upgrade your flat design to become 3D. You head over to the table of supplies and grab:
         """,
-        choices: [
+        choice: [
             Choice(text: "Marzipan, and lots of it!", destination: 19),
             Choice(text: "Several bags of different color icing.", destination: 20),
         ]
@@ -119,7 +119,7 @@ let story = Story(pages: [
         
         😢 Try again.
         """,
-        choices: []
+        choice: []
     ),
     StoryPage( // 11
         """
@@ -127,7 +127,7 @@ let story = Story(pages: [
         
         😢 Try again.
         """,
-        choices: []
+        choice: []
     ),
     StoryPage( // 12
         """
@@ -135,7 +135,7 @@ let story = Story(pages: [
         
         😢 Try again.
         """,
-        choices: []
+        choice: []
     ),
     StoryPage( // 13
         """
@@ -143,7 +143,7 @@ let story = Story(pages: [
         
         😢 Try again.
         """,
-        choices: []
+        choice: []
     ),
     StoryPage( // 14
         """
@@ -153,7 +153,7 @@ let story = Story(pages: [
         """,
 
 
-        choices: []
+        choice: []
     ),
     StoryPage( // 15
         """
@@ -161,7 +161,7 @@ let story = Story(pages: [
         
         🎉💵You are a cash prize winner!💵🥳
         """,
-        choices: []
+        choice: []
     ),
     StoryPage( // 16
         """
@@ -169,7 +169,7 @@ let story = Story(pages: [
         
         😢 Try again.
         """,
-        choices: []
+        choice: []
     ),
     StoryPage( // 17
         """
@@ -177,7 +177,7 @@ let story = Story(pages: [
         
         🎉💵You are a cash prize winner!💵🥳
         """,
-        choices: []
+        choice: []
     ),
     StoryPage( // 18
         """
@@ -185,7 +185,7 @@ let story = Story(pages: [
         
         😢 Try again.
         """,
-        choices: []
+        choice: []
     ),
     StoryPage( // 19
         """
@@ -193,7 +193,7 @@ let story = Story(pages: [
         
         🎉💵You are a cash prize winner!💵🥳
         """,
-        choices: []
+        choice: []
     ),
     StoryPage( // 20
         """
@@ -201,6 +201,6 @@ let story = Story(pages: [
         
         😢 Try again.
         """,
-        choices: []
+        choice: []
     ),
 ])
